@@ -61,9 +61,9 @@ const AiCom = () => {
         loop
       />
 
-      {/* Yazılar */}
+      {/* Yazılar - Mobilde gizle */}
       {isActive && (
-        <div className="absolute top-1/2 left-0 w-full z-30 flex justify-between items-center px-16 -translate-y-1/2 pointer-events-none">
+        <div className="hidden sm:flex absolute top-1/2 left-0 w-full z-30 flex justify-between items-center px-16 -translate-y-1/2 pointer-events-none">
           {/* Sol */}
           <motion.div
             initial={{ x: -50, opacity: 0 }}
