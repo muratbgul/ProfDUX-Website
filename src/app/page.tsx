@@ -1,5 +1,4 @@
 "use client";
-import React, { useState } from "react";
 import Hero from "../components/Hero/Hero";
 import FeaturesSection from "../components/FeaturesSection/featuresSection";
 import SplitTransitionVideo from "../components/SplitTransitionVideo/SplitTransitionVideo";

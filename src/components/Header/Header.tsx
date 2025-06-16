@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { text } from 'stream/consumers';
 
 export default function Header() {
   return (
