@@ -8,7 +8,7 @@ export default function Strip() {
   return (
     <section
       ref={sectionRef}
-      className="w-full px-4 py-12 bg-[#751944] text-white"
+      className="w-full px-4 py-12 bg-[#751944] text-white relative z-20"
     >
       <motion.div
         initial={{ y: 100, opacity: 0 }}

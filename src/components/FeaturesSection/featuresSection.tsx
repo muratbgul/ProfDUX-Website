@@ -31,11 +31,11 @@ export default function FeaturesSection() {
     >
       {/* Görsel */}
       <motion.div
-        initial={{ scale: 1, x: 0, y: 100 }}
+        initial={{ scale: 1, x:0 , y: 50 }}
         animate={
           isFullyVisible
             ? { scale: 0.8, x: 0, y: 0 }
-            : { scale: 1, x: 0, y: 100 }
+            : { scale: 1, x: "50%", y: 10 }
         }
         transition={{ duration: 1, ease: "easeInOut" }}
         className="w-full lg:w-1/2 flex justify-center mb-12 lg:mb-0"
@@ -43,7 +43,7 @@ export default function FeaturesSection() {
         <img
           src="/assets/images/pd1.jpg"
           alt="Map"
-          className="w-full max-w-[500px] h-auto rounded-xl shadow-lg"
+          className="w-full max-w-[700px] h-auto rounded-xl shadow-lg"
         />
       </motion.div>
 

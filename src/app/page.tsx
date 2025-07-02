@@ -10,15 +10,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="h-[110px]"/>
+      <Strip/>
       <FeaturesSection />
       <Strip/>
-      <div className="h-[110px]"/>
       <SplitTransitionVideo/>
       <Strip/>
-      <div className="h-[110px]"/>
       <AboutProfDux/>
-      <div className="h-[110px]"/>
       <Footer/>
     </>
   );

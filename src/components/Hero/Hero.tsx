@@ -53,42 +53,10 @@ export default function Hero() {
           <img
             src="/assets/images/phoneprufdux.png"
             alt="Phone"
-            className="w-3/4 sm:w-[400px] md:w-[500px] lg:w-[600px] h-auto object-contain"
+            className="w-3/4 sm:w-[400px] md:w-[500px] lg:w-[600px] h-auto object-contain relative z-10"
           />
         </motion.div>
       </div>
-
-      {/* Mor Şerit (Alt İstatistik) */}
-      <motion.div
-        initial={{ y: 100, opacity: 0 }}
-        animate={{
-          y: isInView ? 0 : 100,
-          opacity: isInView ? 1 : 0,
-        }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        className="bg-[#751944] text-white py-8 px-4 sm:px-8 flex flex-wrap justify-around items-center w-full mt-12 gap-y-6"
-      >
-        {[ 
-          { value: "8K", label: "Happy Customers" },
-          { value: "4.2", label: "Overall Rating" },
-          { value: "250+", label: "Projects Completed" },
-          { value: "95%", label: "Customer Satisfaction" }
-        ].map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{
-              opacity: isInView ? 1 : 0,
-              y: isInView ? 0 : 20,
-            }}
-            transition={{ duration: 1, delay: 0.3 * (index + 1) }}
-            className="text-center w-1/2 sm:w-auto"
-          >
-            <h2 className="text-2xl sm:text-3xl font-bold">{item.value}</h2>
-            <p className="text-sm">{item.label}</p>
-          </motion.div>
-        ))}
-      </motion.div>
     </section>
   );
 }
